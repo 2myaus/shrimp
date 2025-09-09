@@ -7,18 +7,6 @@
     pkgs =
       nixpkgs.legacyPackages.x86_64-linux.appendOverlays
       [
-        # (final: prev: {
-        # verible = prev.verible.overrideAttrs (old: {
-        # GIT_VERSION = "v0.0-4023-gc1271a00";
-        # version = "v0.0.4023";
-        # src = prev.fetchFromGitHub {
-        # owner = "chipsalliance";
-        # repo = "verible";
-        # rev = "v0.0-4023-gc1271a00";
-        # hash = "sha256-N+yjRcVxFI56kP3zq+qFHNXZLTtVnQaVnseZS13YN0s=";
-        # };
-        # });
-        # })
         (final: prev: {
           verible = prev.stdenv.mkDerivation rec {
             pname = "verible";
