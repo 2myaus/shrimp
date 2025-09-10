@@ -6,6 +6,9 @@ package pkg_shrimp_alu_defs;
     ADDU,  // add unsigned A+B
     ADDS,  // add signed A+B
     NEG,   // negate by 2's comp -A
-    CMP    // compare A>B (in LSB 001 A>B, 010 A<B, 100 A=B)
+    CMP,   // compare A>B (in LSB 001 A>B, 010 A<B, 100 A=B)
+    SLL,   // bitshift left logical A<<B
+    SRL,   // bitshift right logical A>>B
+    SRA    // bitshift right arithmatic A>>>B
   } alu_opcode_e;
 endpackage

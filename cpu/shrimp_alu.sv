@@ -37,9 +37,22 @@ module shrimp_alu (
     end
 
     CMP: begin  // compare A>B (in LSB 001 A>B, 010 A<B, 100 A=B)
-      assign result[0] = operand_a > operand_b;
-      assign result[1] = operand_a < operand_b;
-      assign result[2] = operand_a == operand_b;
+      assign result[0]   = operand_a > operand_b;
+      assign result[1]   = operand_a < operand_b;
+      assign result[2]   = operand_a == operand_b;
+      assign result[3:7] = 0;
+    end
+
+    SLL: begin  // bitshift left logical A<<B
+      assign result = operand_a <<< operand_b;
+    end
+
+    SRL: begin  // bitshift right logical A>>B
+      assign result = operand_a >>> operand_b;
+    end
+
+    SRA: begin  // bitshift right arithmatic A>>>B
+      assign result = operand_a >> operand_b;
     end
   endcase
 
