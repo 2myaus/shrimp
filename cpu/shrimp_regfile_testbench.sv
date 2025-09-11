@@ -4,12 +4,12 @@ module shrimp_regfile_testbench ();
   logic [3:0] reg_r_b_addr;  // address for register read B
   logic [3:0] reg_w_addr;  // address for register writing
 
-  logic [7:0] reg_w_val;  // value to write to reg_w_addr
+  logic [15:0] reg_w_val;  // value to write to reg_w_addr
   logic reg_w_enable;  // write to reg_w_addr on positive clk edge
   logic clock;
 
-  logic [7:0] reg_r_a_val;  // value read from register A
-  logic [7:0] reg_r_b_val;  // value read from register B
+  logic [15:0] reg_r_a_val;  // value read from register A
+  logic [15:0] reg_r_b_val;  // value read from register B
 
   shrimp_regfile regfile (
       .reg_r_a_addr(reg_r_a_addr),
@@ -27,7 +27,7 @@ module shrimp_regfile_testbench ();
     reg_w_enable = 0;
     reg_r_a_addr = 4'b0000;
     reg_r_b_addr = 4'b0000;
-    reg_w_val = 8'b0;
+    reg_w_val = 16'b0;
     reg_w_addr = 4'b0;
 
     #10;
@@ -38,7 +38,7 @@ module shrimp_regfile_testbench ();
     #10;
 
     reg_w_addr = 4'b0000;
-    reg_w_val = 8'd120;
+    reg_w_val = 16'd120;
     reg_r_b_addr = 4'b0001;
     reg_w_enable = 1;
 
