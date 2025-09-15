@@ -54,6 +54,25 @@ module shrimp_regfile_testbench ();
 
     $display(reg_r_a_val);
     $display(reg_r_b_val);
+
+    #5;
+
+    reg_r_a_addr = 4'hF;
+
+    reg_w_addr = 4'hF;
+    reg_w_val = 16'd240;
+    reg_w_enable = 1;
+
+    #5;
+
+    clock = 1;
+
+    #5;
+
+    clock = 0;
+    #5;
+
+    $display(reg_r_a_val);
   end
 
 endmodule : shrimp_regfile_testbench

@@ -11,13 +11,13 @@ module shrimp_regfile (
     output wire [15:0] reg_r_b_val   // value read from register B
 );
 
-  reg [15:0] registers[16];
+  reg [15:0] registers[15];  // last register (address 0xF) is zero reg
 
-  assign reg_r_a_val = registers[reg_r_a_addr];
-  assign reg_r_b_val = registers[reg_r_b_addr];
+  assign reg_r_a_val = (reg_r_a_addr == 4'hF) ? 0 : registers[reg_r_a_addr];
+  assign reg_r_b_val = (reg_r_b_addr == 4'hF) ? 0 : registers[reg_r_b_addr];
 
   always_ff @(posedge clock) begin
-    if (reg_w_enable) begin
+    if (reg_w_enable && reg_w_addr != 4'hF) begin
       registers[reg_w_addr] <= reg_w_val;
     end
   end
