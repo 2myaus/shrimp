@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
   };
 
   outputs = {nixpkgs, ...}: let
@@ -43,6 +43,9 @@
   in {
     devShells.x86_64-linux.default = pkgs.mkShell {
       buildInputs = [
+        pkgs.ghdl # VHDL compiler studd
+        pkgs.vhdl-ls # VHDL langserver
+
         pkgs.gcc
         pkgs.clang-tools
         pkgs.pkg-config
