@@ -8,4 +8,3 @@ SOURCE = \
 
 all:
 	$(GHDL) -c $(FLAGS) $(SOURCE)
-	# $(GHDL) -e $(FLAGS) $(SOURCE)

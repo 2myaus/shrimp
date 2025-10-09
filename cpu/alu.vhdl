@@ -54,11 +54,11 @@ begin
 
       when ALUOP_CMP =>
         if operand_a > operand_b then
-          result <= 16x"0001";
+          result <= 16x"0001"; -- return 1
         elsif operand_a < operand_b then
-          result <= 16x"FFFF";
+          result <= 16x"FFFF"; -- return -1
         else
-          result <= 16x"0000";
+          result <= 16x"0000"; -- return 0
         end if;
 
       when ALUOP_NEG =>
