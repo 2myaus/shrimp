@@ -44,7 +44,7 @@ begin
           overflow <= (opa_msb xnor opb_msb) and (result(result'length-1) xor opa_msb);
           carry <= '0';
         else 
-          result <= std_logic_vector(to_unsigned(opa_int + opb_int, word'length));
+          result <= std_logic_vector(to_unsigned(opa_int + opb_int, result'length));
           overflow <= '0';
           carry <= opa_msb and opb_msb;
         end if;

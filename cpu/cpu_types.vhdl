@@ -34,11 +34,26 @@ package cpu_types is
   constant CPUOP_WRITE_MEM_WORD : cpu_opcode := "0111"; -- full register
   constant CPUOP_WRITE_MEM_BYTE : cpu_opcode := "1000"; -- least significant 8 bits
   constant CPUOP_READ_MEM : cpu_opcode := "1001"; -- read full 16bit word from memory
-  constant CPUOP_BRANCH_EQ : cpu_opcode := "1010"; -- on some condition
+  constant CPUOP_BRANCH_EQ : cpu_opcode := "1010"; -- jump to position if equal
   constant CPUOP_SYSCALL : cpu_opcode := "1011";
   constant CPUOP_SRA : cpu_opcode := "1100"; -- arithmatic rightshift
   constant CPUOP_SRL : cpu_opcode := "1101"; -- logical rightshift
   constant CPUOP_SLL : cpu_opcode := "1110"; -- logical leftshift
-  constant CPUOP_LOAD_IMM   : cpu_opcode := "1111"; -- (immediate-type) Load immediate value
+  constant CPUOP_LOAD_IMM : cpu_opcode := "1111"; -- (immediate-type) Load immediate value
+
+  --! immediate-type CPU instruction
+  type cpu_instruction_i is record
+    opcode : cpu_opcode; -- opcode
+    data : halfword; -- immediate value
+    reg_dest : reg_addr; -- destination register
+  end record;
+
+  --! standard-type CPU instuction
+  type cpu_instruction_s is record
+    opcode : cpu_opcode;
+    reg_operand_a : reg_addr; -- operand a
+    reg_operand_b : reg_addr; -- operand b
+    reg_dest : reg_addr; -- destination register
+  end record;
 
 end package;
