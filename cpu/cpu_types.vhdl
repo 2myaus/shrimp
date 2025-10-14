@@ -9,6 +9,9 @@ package cpu_types is
   --! register half-word (8 bits / 1 byte)
   subtype halfword is std_logic_vector(7 downto 0);
 
+  --! register quarter-word (4 bits)
+  subtype quarterword is std_logic_vector(3 downto 0);
+
   --! a 4-bit address for a CPU register
   subtype reg_addr is std_logic_vector(3 downto 0);
 
@@ -28,13 +31,16 @@ package cpu_types is
   constant CPUOP_OR : cpu_opcode := "0001"; -- OR A|B
   constant CPUOP_XOR : cpu_opcode := "0010"; -- XOR A^B
   constant CPUOP_ADD : cpu_opcode := "0011"; -- add A+B
-  constant CPUOP_SUB : cpu_opcode := "0100"; -- subtract A-B
+  -- constant CPUOP_SUB : cpu_opcode := "0100"; -- subtract A-B
   constant CPUOP_CMP : cpu_opcode := "0101"; -- <, >, or =
-  constant CPUOP_NEG : cpu_opcode := "0110"; -- negate
-  constant CPUOP_WRITE_MEM_WORD : cpu_opcode := "0111"; -- full register
-  constant CPUOP_WRITE_MEM_BYTE : cpu_opcode := "1000"; -- least significant 8 bits
-  constant CPUOP_READ_MEM_WORD : cpu_opcode := "1001"; -- read full 16bit word from memory
-  constant CPUOP_READ_MEM_BYTE : cpu_opcode := "1010"; -- read 8bit halfword from memory
+  constant CPUOP_NEG : cpu_opcode := "0110"; -- (short-immediate-type) negate
+  -- NEG 0: 1's complement (XOR 1); NEG 1: 2's complement (arithmetic negate)
+  -- constant CPUOP_WRITE_MEM_WORD : cpu_opcode := "0111"; -- full register
+  -- constant CPUOP_WRITE_MEM_BYTE : cpu_opcode := "1000"; -- least significant 8 bits
+  -- constant CPUOP_READ_MEM_WORD : cpu_opcode := "1001"; -- read full 16bit word from memory
+  -- constant CPUOP_READ_MEM_BYTE : cpu_opcode := "1010"; -- read 8bit halfword from memory
+  constant CPUOP_MEMORY : cpu_opcode := "0111"; -- (short-immediate-type) interface with memory
+  -- MEMORY 0: read full word; MEMORY 1: write full word; MEMORY 2: read byte; MEMORY 3: write byte
   constant CPUOP_BRANCH_EQ : cpu_opcode := "1011"; -- jump to position if equal
   constant CPUOP_SRA : cpu_opcode := "1100"; -- arithmatic rightshift
   constant CPUOP_SRL : cpu_opcode := "1101"; -- logical rightshift
@@ -42,18 +48,26 @@ package cpu_types is
   constant CPUOP_LOAD_IMM : cpu_opcode := "1111"; -- (immediate-type) Load immediate value
 
   --! immediate-type CPU instruction
-  type cpu_instruction_i is record
+  type cpu_instruction_imm is record
     opcode : cpu_opcode; -- opcode
     data : halfword; -- immediate value
     reg_dest : reg_addr; -- destination register
   end record;
 
+  --! short-immediate-type CPU instruction
+  type cpu_instruction_immshort is record
+    opcode : cpu_opcode; -- opcode
+    reg_operand_a : reg_addr; -- operand a
+    data : quarterword; -- immediate value
+    reg_dest : reg_addr; -- destination register
+  end record;
+
   --! standard-type CPU instuction
-  type cpu_instruction_s is record
+  type cpu_instruction_std is record
     opcode : cpu_opcode;
     reg_operand_a : reg_addr; -- operand a
     reg_operand_b : reg_addr; -- operand b
-    reg_dest : reg_addr; -- destination register
+    reg_c: reg_addr; -- destination register or operand c
   end record;
 
 end package;

@@ -6,6 +6,7 @@ SOURCE = \
 	alu.vhdl \
 	regfile.vhdl \
 	instruction_counter.vhdl \
+	instruction_decoder.vhdl \
 
 all:
 	$(GHDL) -c $(FLAGS) $(SOURCE)

@@ -1,0 +1,15 @@
+v 4
+file . "instruction_decoder.vhdl" "67c818be6ddd7f48d471b267865f87bdaa606587" "20251014203623.640":
+  entity instruction_decoder at 1( 0) + 0 on 4;
+  architecture instruction_decoder_a of instruction_decoder at 27( 1061) + 0 on 4;
+file . "instruction_counter.vhdl" "fb14ea7fea571238d37ccad2fca7d12caeb0f439" "20251014203623.640":
+  entity instruction_counter at 1( 0) + 0 on 4;
+  architecture instruction_counter_a of instruction_counter at 19( 511) + 0 on 4;
+file . "regfile.vhdl" "d427f7f616611bd65f1570a10266ce4fc1196d06" "20251014203623.640":
+  entity regfile at 1( 0) + 0 on 4;
+  architecture regfile_a of regfile at 23( 560) + 0 on 4;
+file . "alu.vhdl" "98942694ad129cabe2dbc664fcf44b996022f4bd" "20251014203623.640":
+  entity alu at 1( 0) + 0 on 4;
+  architecture alu_a of alu at 20( 389) + 0 on 4;
+file . "cpu_types.vhdl" "313a22c6fd1ca892df9cd92c539738d257e17606" "20251014203623.640":
+  package cpu_types at 1( 0) + 0 on 4;
