@@ -33,9 +33,9 @@ package cpu_types is
   constant CPUOP_NEG : cpu_opcode := "0110"; -- negate
   constant CPUOP_WRITE_MEM_WORD : cpu_opcode := "0111"; -- full register
   constant CPUOP_WRITE_MEM_BYTE : cpu_opcode := "1000"; -- least significant 8 bits
-  constant CPUOP_READ_MEM : cpu_opcode := "1001"; -- read full 16bit word from memory
-  constant CPUOP_BRANCH_EQ : cpu_opcode := "1010"; -- jump to position if equal
-  constant CPUOP_SYSCALL : cpu_opcode := "1011";
+  constant CPUOP_READ_MEM_WORD : cpu_opcode := "1001"; -- read full 16bit word from memory
+  constant CPUOP_READ_MEM_BYTE : cpu_opcode := "1010"; -- read 8bit halfword from memory
+  constant CPUOP_BRANCH_EQ : cpu_opcode := "1011"; -- jump to position if equal
   constant CPUOP_SRA : cpu_opcode := "1100"; -- arithmatic rightshift
   constant CPUOP_SRL : cpu_opcode := "1101"; -- logical rightshift
   constant CPUOP_SLL : cpu_opcode := "1110"; -- logical leftshift
