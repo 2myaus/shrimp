@@ -39,7 +39,7 @@ begin
     if rising_edge(clock) then
       if write_enable then
 
-        if (reg_w_int /= 15) then -- Exclude 0-register from writing
+        if (reg_w /= ZERO_REG) then -- Exclude 0-register from writing
           registers(reg_w_int) <= write_val;
         end if;
 

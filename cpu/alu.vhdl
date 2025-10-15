@@ -19,7 +19,7 @@ end entity;
 
 architecture alu_a of alu is
 begin
-  process 
+  process is
     variable opa_int : integer;
     variable opb_int : integer;
     variable opa_msb : std_logic;
