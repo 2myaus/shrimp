@@ -9,52 +9,38 @@ use work.cpu_types.all;
 --! and determines which address is written to, while in_addr_2 outputs to
 --! read_val_2 only.
 entity memfile is
+  generic (
+    channels : integer; -- number of access channels for r/w
+    address_width : integer; -- bit width of addresses (determines address space)
+    word_width : integer -- size of each value in bits
+  );
   port(
-    in_addr_1 : in word; -- address for reading and writing
-    in_addr_2 : in word; -- second address for reading
-    write_val : in word; -- value to write to in_addr
-    write_enable : in std_logic; -- whether to update memory address on clock
-    byte_1 : in std_logic; -- read/write only a single byte to addr_1 instead of a full word
+    in_addrs : in std_logic_vector(channels*address_width-1 downto 0); -- addresses
+    write_vals : in std_logic_vector(channels*word_width-1 downto 0); -- value to write to matching in_addr
+    write_enable : in std_logic_vector(channels); -- whether to update memory address on clock
     clock : in std_logic;
 
-    read_val_1 : out word; -- address currently at in_addr_1
-    read_val_2 : out word -- address currently at in_addr_2
+    read_vals : out std_logic_vector(channels*word_width-1 downto 0) -- value at matching in_addr
   );
 end entity;
 
 architecture memfile_a of memfile is
-    type memfile is array(16#FFFF# downto 0) of halfword; -- index 15 is zero-reg
-    signal bytes : memfile;
+    type memfile_t is array(2**address_width downto 0) of std_logic_vector(word_width downto 0);
+    signal memfile : memfile_t;
 begin
-  process is
-    variable in_addr_1_int : integer := to_integer(unsigned(in_addr_1));
-    variable in_addr_2_int : integer := to_integer(unsigned(in_addr_2));
-  begin
+  generate_mem_io: for channel in 0 to channels generate
+    process is -- read process
+      variable addr_int : integer := to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
+    begin
+      read_vals((channel+1)*address_width-1 downto channel*address_width) <= memfile(addr_int);
+    end process;
 
-    read_val_2(15 downto 8) <= bytes(in_addr_2_int);
-    read_val_2(7 downto 0) <= bytes(in_addr_2_int+1);
-
-    if byte_1 then
-      read_val_1(15 downto 8) <= (others => '0');
-      read_val_1(7 downto 0) <= bytes(in_addr_1_int);
-    else
-      read_val_1(15 downto 8) <= bytes(in_addr_1_int);
-      read_val_1(7 downto 0) <= bytes(in_addr_1_int+1);
-    end if;
-  end process;
-
-  process(clock) is
-    variable in_addr_int : integer := to_integer(unsigned(in_addr_1));
-  begin
-    if rising_edge(clock) then
-      if write_enable then
-        if byte_1 then
-          bytes(in_addr_int) <= write_val(15 downto 8);
-          bytes(in_addr_int + 1) <= write_val(7 downto 0);
-        else
-          bytes(in_addr_int) <= write_val(7 downto 0);
-        end if;
+    process(clock) is -- write process
+      variable addr_int : integer := to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
+    begin
+      if rising_edge(clock) and write_enable(channel) = '1' then
+        memfile(addr_int) <= write_vals((channel+1)*address_width-1 downto channel*address_width);
       end if;
-    end if;
-  end process;
+    end process;
+  end generate generate_mem_io;
 end architecture;
