@@ -42,37 +42,37 @@ package cpu_types is
 
   --! add reg_a + reg_b to reg_c
   constant CPUOP_ADD : cpu_opcode := "0011";
+
+  --! (short-immediate-type) add reg_a + imm to reg_c; imm is unsigned
+  constant CPUOP_ADDI : cpu_opcode := "0100";
   
   --! subtract reg_a - reg_b to reg_c
-  constant CPUOP_SUB : cpu_opcode := "0100";
+  constant CPUOP_SUB : cpu_opcode := "0101";
+  
+  --! (short-immediate-type) subtract reg_a - imm to reg_c; imm is unsigned
+  constant CPUOP_SUBI : cpu_opcode := "0110";
 
   --! compare reg_a and reg_b to reg_c (if A>B, C=1; if A<B, C=-1, if A=B, C=0)
-  constant CPUOP_CMP : cpu_opcode := "0101";
+  constant CPUOP_CMP : cpu_opcode := "0111";
 
   --! (short-immediate-type) negate reg_a to reg_c (if imm=0, 1's comp; if imm=1, 2's comp)
-  constant CPUOP_NEG : cpu_opcode := "0110";
+  constant CPUOP_NEG : cpu_opcode := "1000";
 
   --! (short-immediate-type) read/write memory at address reg_a to/from reg_c
   --! MEMORY 0: read full word; MEMORY 1: write full word; MEMORY 2: read byte; MEMORY 3: write byte
-  constant CPUOP_MEMORY : cpu_opcode := "0111"; -- (short-immediate-type) interface with memory
+  constant CPUOP_MEMORY : cpu_opcode := "1001"; -- (short-immediate-type) interface with memory
 
-  --! jump to reg_c if reg_a = reg_b
-  constant CPUOP_BRANCH_EQ : cpu_opcode := "1000";
+  --! jump/offset pc by reg_c if reg_a = reg_b
+  constant CPUOP_BRANCH_EQ : cpu_opcode := "1010";
 
   --! arithmatic rightshift reg_a by reg_b to reg_c
-  constant CPUOP_SRA : cpu_opcode := "1001"; -- arithmatic rightshift
-
-  --! logical rightshift reg_a by reg_b to reg_c
-  -- constant CPUOP_SRL : cpu_opcode := "1010"; -- logical rightshift
+  constant CPUOP_SRA : cpu_opcode := "1011"; -- arithmatic rightshift
 
   --! logical leftshift reg_a by reg_b to reg_c
-  constant CPUOP_SLL : cpu_opcode := "1011"; -- logical leftshift
+  constant CPUOP_SLL : cpu_opcode := "1100"; -- logical leftshift
 
   --! (short-immediate-type) arithmatic rightshift reg_a by imm to reg_c
-  constant CPUOP_SRAI : cpu_opcode := "1100";
-
-  --! (short-immediate-type) logical rightshift reg_a by imm to reg_c
-  -- constant CPUOP_SRLI : cpu_opcode := "1101";
+  constant CPUOP_SRAI : cpu_opcode := "1101";
 
   --! (short-immediate-type) logical leftshift reg_a by imm to reg_c
   constant CPUOP_SLLI : cpu_opcode := "1110";

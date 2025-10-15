@@ -117,6 +117,20 @@ begin
       reg_write <= '1';
       mem_write <= '0';
       -- memfile_byte <= '0';
+    when CPUOP_ADDI =>
+      -- (short-immediate-type) add reg_a + imm to reg_c; imm is unsigned
+      alu_b_src <= '1'; -- immediate source for alu b
+      regfile_src <= "01";
+      inc_counter <= '1';
+      r_a <= instruction_in_immshort.reg_operand_a;
+      -- r_b <= ZERO_REG;
+      r_o <= instruction_in_immshort.reg_c;
+      imm <= (7 downto 0 => instruction_in_immshort.data, others => '0');
+      alu_sign <= '1';
+      alu_op <= ALUOP_ADD;
+      reg_write <= '1';
+      mem_write <= '0';
+      -- memfile_byte <= '0';
     when CPUOP_SUB =>
       alu_b_src <= '0';
       regfile_src <= "01";
@@ -126,6 +140,21 @@ begin
       r_o <= instruction_in_std.reg_c;
       -- imm <= (others => '0');
       alu_sign <= '0';
+      alu_op <= ALUOP_SUB;
+      reg_write <= '1';
+      mem_write <= '0';
+      -- memfile_byte <= '0';
+
+    when CPUOP_SUBI =>
+      -- (short-immediate-type) subtract reg_a - imm to reg_c; imm is unsigned
+      alu_b_src <= '1'; -- immediate source for alu b
+      regfile_src <= "01";
+      inc_counter <= '1';
+      r_a <= instruction_in_immshort.reg_operand_a;
+      -- r_b <= ZERO_REG;
+      r_o <= instruction_in_immshort.reg_c;
+      imm <= (7 downto 0 => instruction_in_immshort.data, others => '0');
+      alu_sign <= '1';
       alu_op <= ALUOP_SUB;
       reg_write <= '1';
       mem_write <= '0';
@@ -242,7 +271,6 @@ begin
       reg_write <= '1';
       mem_write <= '0';
       -- memfile_byte <= '0';
-    -- when CPUOP_SRLI =>
     when CPUOP_SLLI =>
       alu_b_src <= '1';
       regfile_src <= "01";
