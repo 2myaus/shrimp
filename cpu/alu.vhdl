@@ -22,9 +22,11 @@ begin
   process is
     variable opa_int : integer;
     variable opb_int : integer;
+    variable opb_uint : integer; -- always unsigned
     variable opa_msb : std_logic;
     variable opb_msb : std_logic;
   begin
+    opb_uint := to_integer(unsigned(operand_b));
     if do_signed then
       opa_int := to_integer(signed(operand_a));
       opb_int := to_integer(signed(operand_b));
@@ -94,11 +96,11 @@ begin
         overflow <= '0';
         carry <= '0';
 
-      when ALUOP_SR =>
+      when ALUOP_BS =>
         if do_signed then
-          result <= std_logic_vector(shift_right(signed(operand_a), opb_int));
+          result <= std_logic_vector(shift_right(signed(operand_a), opb_uint));
         else
-          result <= std_logic_vector(shift_right(unsigned(operand_a), opb_int));
+          result <= std_logic_vector(shift_left(unsigned(operand_a), opb_uint));
         end if;
         overflow <= '0';
         carry <= '0';

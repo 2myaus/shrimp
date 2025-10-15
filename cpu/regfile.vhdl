@@ -15,7 +15,8 @@ entity regfile is
     clock : in std_logic;
 
     reg_r_a_val : out word; -- Value in reg_r_a
-    reg_r_b_val : out word  -- Value in reg_r_b
+    reg_r_b_val : out word;  -- Value in reg_r_b
+    reg_w_val : out word  -- Value in reg_w
   );
 end entity;
 
@@ -27,10 +28,12 @@ begin
   process is
     variable reg_r_a_int : integer := to_integer(unsigned(reg_r_a));
     variable reg_r_b_int : integer := to_integer(unsigned(reg_r_b));
+    variable reg_w_int : integer := to_integer(unsigned(reg_w));
   begin
-  registers(15) <= (others => '0');
-  reg_r_a_val <= registers(reg_r_a_int);
-  reg_r_b_val <= registers(reg_r_b_int);
+    registers(15) <= (others => '0');
+    reg_r_a_val <= registers(reg_r_a_int);
+    reg_r_b_val <= registers(reg_r_b_int);
+    reg_w_val <= registers(reg_w_int);
   end process;
 
   process(clock) is

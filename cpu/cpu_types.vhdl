@@ -26,7 +26,7 @@ package cpu_types is
   constant ALUOP_SUB: alu_opcode := "100"; -- subtract A - B (carry/overflow flags depend on value of signed)
   constant ALUOP_NEG: alu_opcode := "101"; -- negate A by 2's comp if signed=1, by 1's comp if signed=0
   constant ALUOP_CMP: alu_opcode := "110"; -- compare A and B (A>B: 1, A<B: -1, A=B: 0)
-  constant ALUOP_SR: alu_opcode := "111"; -- bitshift right; arithmatic if signed=1, logical if signed=0, A>>B, B is always signed
+  constant ALUOP_BS: alu_opcode := "111"; -- arithmatic bitshift; right if signed=1, left if signed=0, B is always unsigned
   
   --! opcode for CPU instructions
   subtype cpu_opcode is std_logic_vector(3 downto 0);
@@ -63,7 +63,7 @@ package cpu_types is
   constant CPUOP_SRA : cpu_opcode := "1001"; -- arithmatic rightshift
 
   --! logical rightshift reg_a by reg_b to reg_c
-  constant CPUOP_SRL : cpu_opcode := "1010"; -- logical rightshift
+  -- constant CPUOP_SRL : cpu_opcode := "1010"; -- logical rightshift
 
   --! logical leftshift reg_a by reg_b to reg_c
   constant CPUOP_SLL : cpu_opcode := "1011"; -- logical leftshift
@@ -72,7 +72,7 @@ package cpu_types is
   constant CPUOP_SRAI : cpu_opcode := "1100";
 
   --! (short-immediate-type) logical rightshift reg_a by imm to reg_c
-  constant CPUOP_SRLI : cpu_opcode := "1101";
+  -- constant CPUOP_SRLI : cpu_opcode := "1101";
 
   --! (short-immediate-type) logical leftshift reg_a by imm to reg_c
   constant CPUOP_SLLI : cpu_opcode := "1110";
