@@ -49,8 +49,25 @@ begin
           carry <= opa_msb and opb_msb;
         end if;
 
+      when ALUOP_SUB =>
+        if do_signed then
+          result <= std_logic_vector(to_signed(opa_int - opb_int, result'length));
+          overflow <= (opa_msb xor opb_msb) and (result(result'length-1) xor opa_msb);
+          carry <= '0';
+        else 
+          result <= std_logic_vector(to_unsigned(opa_int - opb_int, result'length));
+          if opb_int > opa_int then
+            overflow <= '1';
+          else
+            overflow <= '0';
+          end if;
+          carry <= '0';
+        end if;
+
       when ALUOP_AND =>
         result <= operand_a and operand_b;
+        overflow <= '0';
+        carry <= '0';
 
       when ALUOP_CMP =>
         if operand_a > operand_b then
@@ -60,6 +77,8 @@ begin
         else
           result <= 16x"0000"; -- return 0
         end if;
+        overflow <= '0';
+        carry <= '0';
 
       when ALUOP_NEG =>
         if do_signed then
@@ -67,9 +86,13 @@ begin
         else
           result <= not operand_a;
         end if;
+        overflow <= '0';
+        carry <= '0';
 
       when ALUOP_OR =>
         result <= operand_a or operand_b;
+        overflow <= '0';
+        carry <= '0';
 
       when ALUOP_SR =>
         if do_signed then
@@ -77,9 +100,13 @@ begin
         else
           result <= std_logic_vector(shift_right(unsigned(operand_a), opb_int));
         end if;
+        overflow <= '0';
+        carry <= '0';
 
       when ALUOP_XOR =>
         result <= operand_a xor operand_b;
+        overflow <= '0';
+        carry <= '0';
 
     end case;
   end process;
