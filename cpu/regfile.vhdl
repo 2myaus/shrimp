@@ -22,31 +22,44 @@ end entity;
 
 
 architecture regfile_a of regfile is
-    type regfile is array(14 downto 0) of word; -- index 15 is zero-reg
-    signal registers : regfile;
+  signal reg_r_a_mod : std_logic_vector(3 downto 0);
+  signal reg_r_b_mod : std_logic_vector(3 downto 0);
+  signal reg_w_mod : std_logic_vector(3 downto 0);
 begin
-  process is
-    variable reg_r_a_int : integer := to_integer(unsigned(reg_r_a));
-    variable reg_r_b_int : integer := to_integer(unsigned(reg_r_b));
-    variable reg_w_int : integer := to_integer(unsigned(reg_w));
-  begin
-    registers(15) <= (others => '0');
-    reg_r_a_val <= registers(reg_r_a_int);
-    reg_r_b_val <= registers(reg_r_b_int);
-    reg_w_val <= registers(reg_w_int);
-  end process;
+  process is begin
+    if reg_r_a = ZERO_REG then
+      reg_r_a_val <= (others => '0');
+    else
+      reg_r_a_val <= reg_r_a_mod;
+    end if;
 
-  process(clock) is
-    variable reg_w_int : integer := to_integer(unsigned(reg_w));
-  begin
-    if rising_edge(clock) then
-      if write_enable then
+    if reg_r_b = ZERO_REG then
+      reg_r_b_val <= (others => '0');
+    else
+      reg_r_b_val <= reg_r_b_mod;
+    end if;
 
-        if (reg_w /= ZERO_REG) then -- Exclude 0-register from writing
-          registers(reg_w_int) <= write_val;
-        end if;
-
-      end if;
+    if reg_w = ZERO_REG then
+      reg_w_val <= (others => '0');
+    else
+      reg_w_val <= reg_w_mod;
     end if;
   end process;
+
+  m1 : entity work.memfile generic map(
+    channels => 3,
+    address_width => 4,
+    word_width => 16
+  ) port map(
+    in_addrs(3 downto 0) => reg_r_a_mod,
+    in_addrs(7 downto 4) => reg_r_b_mod,
+    in_addrs(11 downto 8) => reg_w_mod,
+    write_vals(11 downto 8) => write_val,
+    write_vals(7 downto 0) => (others => '0'),
+    write_enable(2) => write_enable,
+    clock => clock,
+    read_vals(3 downto 0) => reg_r_a_val,
+    read_vals(7 downto 4) => reg_r_b_val,
+    read_vals(11 downto 8) => reg_w_val
+  );
 end architecture;
