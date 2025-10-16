@@ -7,6 +7,9 @@ use work.cpu_types.all;
 --! instruction address counter.
 --! Increments stored address by 2 for each clock pulse, or by offset if jump=1 during the clock pulse
 entity instruction_counter is
+  generic(
+    start_addr : word := (others => '0')
+  );
   port(
     offset : in word; -- signed offset by which to change position
     increment: in std_logic; -- whether to increment position or otherwise jump to jump_addr on clock signal
@@ -18,7 +21,7 @@ entity instruction_counter is
 end entity;
 
 architecture instruction_counter_a of instruction_counter is
-    signal current_addr : word := (others => '0');
+    signal current_addr : word := start_addr;
     signal current_addr_2 : word;
 begin
   instruction_addr <= current_addr;
@@ -33,7 +36,7 @@ begin
     variable offset_int : integer := to_integer(signed(offset));
   begin
     if rising_edge(clock) then
-      if increment then
+      if increment='1' then
         current_addr <= std_logic_vector(to_unsigned(current_addr_int + 2, current_addr'length));
       else
         current_addr <= std_logic_vector(to_unsigned(current_addr_int + offset_int, current_addr'length));

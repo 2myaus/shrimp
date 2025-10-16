@@ -63,240 +63,242 @@ begin
     variable instruction_in_immshort : cpu_instruction_immshort:= word_to_instr_immshort(instruction_in);
 
   begin
-    -- TODO
     case instruction_in_std.opcode is
-    when CPUOP_AND =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_AND;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_OR =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_OR;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_XOR =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_XOR;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_ADD =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_ADD;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_ADDI =>
-      -- (short-immediate-type) add reg_a + imm to reg_c; imm is unsigned
-      alu_b_src <= '1'; -- immediate source for alu b
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_immshort.reg_operand_a;
-      -- r_b <= ZERO_REG;
-      r_o <= instruction_in_immshort.reg_c;
-      imm <= (7 downto 0 => instruction_in_immshort.data, others => '0');
-      alu_sign <= '1';
-      alu_op <= ALUOP_ADD;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_SUB =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_SUB;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
+      when CPUOP_AND =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_AND;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_OR =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_OR;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_XOR =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_XOR;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_ADD =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_ADD;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_ADDI =>
+        -- (short-immediate-type) add reg_a + imm to reg_c; imm is unsigned
+        alu_b_src <= '1'; -- immediate source for alu b
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_immshort.reg_operand_a;
+        -- r_b <= ZERO_REG;
+        r_o <= instruction_in_immshort.reg_c;
+        imm(3 downto 0) <= instruction_in_immshort.data;
+        imm(7 downto 4) <= (others => '0');
+        alu_sign <= '1';
+        alu_op <= ALUOP_ADD;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_SUB =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_SUB;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
 
-    when CPUOP_SUBI =>
-      -- (short-immediate-type) subtract reg_a - imm to reg_c; imm is unsigned
-      alu_b_src <= '1'; -- immediate source for alu b
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_immshort.reg_operand_a;
-      -- r_b <= ZERO_REG;
-      r_o <= instruction_in_immshort.reg_c;
-      imm <= (7 downto 0 => instruction_in_immshort.data, others => '0');
-      alu_sign <= '1';
-      alu_op <= ALUOP_SUB;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_CMP =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_CMP;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_NEG =>
-      -- NEG 0: 1's complement (XOR 1); NEG 1: 2's complement (arithmetic negate)
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_immshort.reg_operand_a;
-      -- r_b <= ZERO_REG;
-      r_o <= instruction_in_immshort.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= instruction_in_immshort.data(0);
-      alu_op <= ALUOP_NEG;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_MEMORY =>
-      -- MEMORY 0: read full word; MEMORY 1: write full word; MEMORY 2: read byte; MEMORY 3: write byte
-      -- reg a: memory address
-      -- reg c: register address for read/write
-      -- alu_b_src <= '0';
-      regfile_src <= '0';
-      inc_counter <= '1';
-      r_a <= instruction_in_immshort.reg_operand_a;
-      r_b <= instruction_in_immshort.reg_c;
-      r_o <= instruction_in_immshort.reg_c;
-      -- imm <= (others => '0');
-      -- alu_sign <= '0';
-      -- alu_op <= ALUOP_NEG;
-      case to_integer(unsigned(instruction_in_immshort.data)) is
-        when 0 =>
-          reg_write <= '1';
-          mem_write <= '0';
-          memfile_byte <='0';
-        when 1 =>
-          reg_write <= '0';
-          mem_write <= '1';
-          memfile_byte <='0';
-        when 2 =>
-          reg_write <= '1';
-          mem_write <= '0';
-          memfile_byte <='1';
-        when others =>
-          reg_write <= '0';
-          mem_write <= '1';
-          memfile_byte <='1';
-      end case;
-    when CPUOP_BRANCH_EQ =>
-      alu_b_src <= '0';
-      regfile_src <= '1'; -- select ALU
-      inc_counter <= '0'; -- allow ALU to control jump
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      reg_write <= '0';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-      -- imm <= (others => '0');
-      -- alu_sign <= '0';
-      -- alu_op <= ALUOP_NEG;
+      when CPUOP_SUBI =>
+        -- (short-immediate-type) subtract reg_a - imm to reg_c; imm is unsigned
+        alu_b_src <= '1'; -- immediate source for alu b
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_immshort.reg_operand_a;
+        -- r_b <= ZERO_REG;
+        r_o <= instruction_in_immshort.reg_c;
+        imm(3 downto 0) <= instruction_in_immshort.data;
+        imm(7 downto 4) <= (others => '0');
+        alu_sign <= '1';
+        alu_op <= ALUOP_SUB;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_CMP =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_CMP;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_NEG =>
+        -- NEG 0: 1's complement (XOR 1); NEG 1: 2's complement (arithmetic negate)
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_immshort.reg_operand_a;
+        -- r_b <= ZERO_REG;
+        r_o <= instruction_in_immshort.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= instruction_in_immshort.data(0);
+        alu_op <= ALUOP_NEG;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_MEMORY =>
+        -- MEMORY 0: read full word; MEMORY 1: write full word; MEMORY 2: read byte; MEMORY 3: write byte
+        -- reg a: memory address
+        -- reg c: register address for read/write
+        -- alu_b_src <= '0';
+        regfile_src <= '0';
+        inc_counter <= '1';
+        r_a <= instruction_in_immshort.reg_operand_a;
+        r_b <= instruction_in_immshort.reg_c;
+        r_o <= instruction_in_immshort.reg_c;
+        -- imm <= (others => '0');
+        -- alu_sign <= '0';
+        -- alu_op <= ALUOP_NEG;
+        case to_integer(unsigned(instruction_in_immshort.data)) is
+          when 0 =>
+            reg_write <= '1';
+            mem_write <= '0';
+            memfile_byte <='0';
+          when 1 =>
+            reg_write <= '0';
+            mem_write <= '1';
+            memfile_byte <='0';
+          when 2 =>
+            reg_write <= '1';
+            mem_write <= '0';
+            memfile_byte <='1';
+          when others =>
+            reg_write <= '0';
+            mem_write <= '1';
+            memfile_byte <='1';
+        end case;
+      when CPUOP_BRANCH_EQ =>
+        alu_b_src <= '0';
+        regfile_src <= '1'; -- select ALU
+        inc_counter <= '0'; -- allow ALU to control jump
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        reg_write <= '0';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+        -- imm <= (others => '0');
+        -- alu_sign <= '0';
+        -- alu_op <= ALUOP_NEG;
 
-    when CPUOP_SRA =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '1';
-      alu_op <= ALUOP_BS;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    -- when CPUOP_SRL =>
-    when CPUOP_SLL =>
-      alu_b_src <= '0';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_std.reg_operand_a;
-      r_b <= instruction_in_std.reg_operand_b;
-      r_o <= instruction_in_std.reg_c;
-      -- imm <= (others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_BS;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_SRAI =>
-      alu_b_src <= '1';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_immshort.reg_operand_a;
-      -- r_b <= ZERO_REG;
-      r_o <= instruction_in_immshort.reg_c;
-      imm <= (7 downto 0 => instruction_in_immshort.data, others => '0');
-      alu_sign <= '1';
-      alu_op <= ALUOP_BS;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_SLLI =>
-      alu_b_src <= '1';
-      regfile_src <= '1';
-      inc_counter <= '1';
-      r_a <= instruction_in_immshort.reg_operand_a;
-      -- r_b <= ZERO_REG;
-      r_o <= instruction_in_immshort.reg_c;
-      imm <= (7 downto 0 => instruction_in_immshort.data, others => '0');
-      alu_sign <= '0';
-      alu_op <= ALUOP_BS;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
-    when CPUOP_LOAD_IMM =>
-      alu_b_src <= '1'; -- Select immediate value as alu input
-      regfile_src <= '1'; -- Select ALU as reg input
-      inc_counter <= '1';
-      r_a <= ZERO_REG; -- Add immediate value to 0
-      -- r_b <= ZERO_REG;
-      r_o <= instruction_in_imm.reg_dest;
-      imm <= instruction_in_imm.data;
-      alu_sign <= '0';
-      alu_op <= ALUOP_ADD;
-      reg_write <= '1';
-      mem_write <= '0';
-      -- memfile_byte <= '0';
+      when CPUOP_SRA =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '1';
+        alu_op <= ALUOP_BS;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_SLL =>
+        alu_b_src <= '0';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_std.reg_operand_a;
+        r_b <= instruction_in_std.reg_operand_b;
+        r_o <= instruction_in_std.reg_c;
+        -- imm <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_BS;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_SRAI =>
+        alu_b_src <= '1';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_immshort.reg_operand_a;
+        -- r_b <= ZERO_REG;
+        r_o <= instruction_in_immshort.reg_c;
+        imm(3 downto 0) <= instruction_in_immshort.data;
+        imm(7 downto 4) <= (others => '0');
+        alu_sign <= '1';
+        alu_op <= ALUOP_BS;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_SLLI =>
+        alu_b_src <= '1';
+        regfile_src <= '1';
+        inc_counter <= '1';
+        r_a <= instruction_in_immshort.reg_operand_a;
+        -- r_b <= ZERO_REG;
+        imm(3 downto 0) <= instruction_in_immshort.data;
+        imm(7 downto 4) <= (others => '0');
+        alu_sign <= '0';
+        alu_op <= ALUOP_BS;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when CPUOP_LOAD_IMM =>
+        alu_b_src <= '1'; -- Select immediate value as alu input
+        regfile_src <= '1'; -- Select ALU as reg input
+        inc_counter <= '1';
+        r_a <= ZERO_REG; -- Add immediate value to 0
+        -- r_b <= ZERO_REG;
+        r_o <= instruction_in_imm.reg_dest;
+        imm <= instruction_in_imm.data;
+        alu_sign <= '0';
+        alu_op <= ALUOP_ADD;
+        reg_write <= '1';
+        mem_write <= '0';
+        -- memfile_byte <= '0';
+      when others =>
     end case;
   end process;
 end architecture;

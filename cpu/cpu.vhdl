@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -6,6 +5,10 @@ use ieee.numeric_std.all;
 use work.cpu_types.all;
 
 entity cpu is
+  generic(
+    mem_data : in std_logic_vector((2**word'length) * halfword'length downto 0) := (others => '0');
+    program_start_addr : word := (others => '0')
+  );
   port(
     clock : in std_logic;
     memory_addr1 : in word;
@@ -48,6 +51,7 @@ architecture cpu_a of cpu is
   signal reg_in_wire : word;
   signal alub_wire : word;
   signal alures_wire : word;
+  signal memw2_wire : std_logic;
 begin
   clock_wire <= clock;
 
@@ -69,34 +73,41 @@ begin
   );
 
   instruction_counter_inst : entity work.instruction_counter
-   port map(
+    generic map(
+      start_addr => program_start_addr
+    )
+    port map(
       offset => instruction_offset_wire,
       increment => increment_counter_wire,
       clock => clock_wire,
       instruction_addr => instruction_address_1_wire,
       instruction_addr_2 => instruction_address_2_wire
-  );
+    );
 
   mem_address2_wire <= std_logic_vector(to_unsigned(to_integer(unsigned(mem_address_wire)) + 1, word'length));
-  memval_wire(halfword'length-1 downto 0) <= memval_byte2_wire and (not membyte_wire);
+  memval_wire(halfword'length-1 downto 0) <= memval_byte2_wire and (memval_byte2_wire'length-1 downto 0 => (not membyte_wire));
+
+  memw2_wire <= memw_wire and (not membyte_wire);
   memfile_inst: entity work.memfile
    generic map(
       channels => 6,
       address_width => word'length,
-      word_width => halfword'length
+      word_width => halfword'length,
+      data => mem_data
   )
-   port map(
+    port map(
       in_addrs(word'length-1 downto 0) => mem_address_wire,
       in_addrs(word'length*2-1 downto word'length) => mem_address2_wire,
       in_addrs(word'length*3-1 downto word'length*2) => instruction_address_1_wire,
       in_addrs(word'length*4-1 downto word'length*3) => instruction_address_2_wire,
       in_addrs(word'length*5-1 downto word'length*4) => memory_addr1,
       in_addrs(word'length*6-1 downto word'length*5) => memory_addr2,
-      write_vals(word'length*2-1 downto 0) => reg_val2_wire,
-      write_vals(word'length*5-1 downto word'length*4) => memory_in_val1,
-      write_vals(word'length*6-1 downto word'length*5) => memory_in_val2,
+      write_vals(halfword'length*2-1 downto 0) => reg_val2_wire,
+      write_vals(halfword'length*4-1 downto halfword'length*2) => (others => '0'),
+      write_vals(halfword'length*5-1 downto halfword'length*4) => memory_in_val1,
+      write_vals(halfword'length*6-1 downto halfword'length*5) => memory_in_val2,
       write_enable(0) => memw_wire,
-      write_enable(1) => memw_wire and (not membyte_wire),
+      write_enable(1) => memw2_wire,
       write_enable(3 downto 2) => (others => '0'),
       write_enable(4) => memory_write1,
       write_enable(5) => memory_write2,
@@ -110,7 +121,7 @@ begin
 
   reg_in_wire <= alures_wire when regfile_src_wire='1' else memval_wire;
   regfile_inst: entity work.regfile
-   port map(
+    port map(
       reg_r_a => reg1_wire,
       reg_r_b => reg2_wire,
       reg_w => rego_wire,
@@ -122,9 +133,10 @@ begin
       reg_w_val => reg_val3_wire
   );
 
-  alub_wire <= reg_val2_wire when alusrc_b_wire='0' else immediate_wire; 
+  alub_wire(7 downto 0) <= reg_val2_wire(7 downto 0) when alusrc_b_wire='0' else immediate_wire; 
+  alub_wire(15 downto 8) <= reg_val2_wire(15 downto 8) when alusrc_b_wire='0' else (others => '0'); 
   alu_inst: entity work.alu
-   port map(
+    port map(
       do_signed => alusign_wire,
       opcode => aluop_wire,
       operand_a => reg_val1_wire,

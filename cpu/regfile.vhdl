@@ -22,9 +22,9 @@ end entity;
 
 
 architecture regfile_a of regfile is
-  signal reg_r_a_mod : std_logic_vector(3 downto 0);
-  signal reg_r_b_mod : std_logic_vector(3 downto 0);
-  signal reg_w_mod : std_logic_vector(3 downto 0);
+  signal reg_r_a_mod : std_logic_vector(word'length-1 downto 0);
+  signal reg_r_b_mod : std_logic_vector(word'length-1 downto 0);
+  signal reg_w_mod : std_logic_vector(word'length-1 downto 0);
 begin
   process is begin
     if reg_r_a = ZERO_REG then
@@ -49,17 +49,18 @@ begin
   m1 : entity work.memfile generic map(
     channels => 3,
     address_width => 4,
-    word_width => 16
+    word_width => 16,
+    data => "0"
   ) port map(
-    in_addrs(3 downto 0) => reg_r_a_mod,
-    in_addrs(7 downto 4) => reg_r_b_mod,
-    in_addrs(11 downto 8) => reg_w_mod,
-    write_vals(11 downto 8) => write_val,
-    write_vals(7 downto 0) => (others => '0'),
+    in_addrs(3 downto 0) => reg_r_a,
+    in_addrs(7 downto 4) => reg_r_b,
+    in_addrs(11 downto 8) => reg_w,
+    write_vals(word'length*3-1 downto word'length*2) => write_val,
+    write_vals(word'length*2-1 downto 0) => (others => '0'),
     write_enable(2) => write_enable,
     clock => clock,
-    read_vals(3 downto 0) => reg_r_a_val,
-    read_vals(7 downto 4) => reg_r_b_val,
-    read_vals(11 downto 8) => reg_w_val
+    read_vals(word'length-1 downto 0) => reg_r_a_mod,
+    read_vals(word'length*2-1 downto word'length) => reg_r_b_mod,
+    read_vals(word'length*3-1 downto word'length*2) => reg_w_mod
   );
 end architecture;
