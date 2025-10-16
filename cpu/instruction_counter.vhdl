@@ -12,14 +12,22 @@ entity instruction_counter is
     increment: in std_logic; -- whether to increment position or otherwise jump to jump_addr on clock signal
     clock : in std_logic;
 
-    instruction_addr : out word -- memory address of the instruction
+    instruction_addr : out word; -- memory address of the instruction
+    instruction_addr_2 : out word -- instruction address + 1
   );
 end entity;
 
 architecture instruction_counter_a of instruction_counter is
     signal current_addr : word := (others => '0');
+    signal current_addr_2 : word;
 begin
   instruction_addr <= current_addr;
+  instruction_addr_2 <= current_addr_2;
+  process is
+    variable current_addr_int : integer := to_integer(unsigned(current_addr));
+  begin
+    current_addr_2 <= std_logic_vector(to_unsigned(current_addr_int + 2, current_addr_2'length));
+  end process;
   process(clock) is
     variable current_addr_int : integer := to_integer(unsigned(current_addr));
     variable offset_int : integer := to_integer(signed(offset));

@@ -59,7 +59,7 @@ package cpu_types is
   constant CPUOP_NEG : cpu_opcode := "1000";
 
   --! (short-immediate-type) read/write memory at address reg_a to/from reg_c
-  --! MEMORY 0: read full word; MEMORY 1: write full word; MEMORY 2: read byte; MEMORY 3: write byte
+  --! MEMORY 0: read full word; MEMORY 1: write full word; MEMORY 2: read byte to MSB end; MEMORY 3: write byte from MSB end
   constant CPUOP_MEMORY : cpu_opcode := "1001"; -- (short-immediate-type) interface with memory
 
   --! jump/offset pc by reg_c if reg_a = reg_b
@@ -81,6 +81,8 @@ package cpu_types is
   constant CPUOP_LOAD_IMM : cpu_opcode := "1111";
 
 
+  subtype cpu_instruction is std_logic_vector(15 downto 0);
+  
   --! immediate-type CPU instruction
   type cpu_instruction_imm is record
     opcode : cpu_opcode; -- opcode
