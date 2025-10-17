@@ -27,19 +27,22 @@ end entity;
 
 architecture memfile_a of memfile is
     signal mfile : std_logic_vector((2**address_width)*word_width-1 downto 0) := data;
+
+    impure function channel_to_addr_int(channel : integer) return integer is
+    begin
+      return to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
+    end function;
 begin
   generate_mem_io: for channel in 0 to channels-1 generate
-    process is -- read process
-      variable addr_int : integer := to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
-    begin
-      read_vals((channel+1)*word_width-1 downto channel*word_width) <= mfile((addr_int+1)*word_width-1 downto addr_int*word_width);
-    end process;
+
+    read_vals((channel+1)*word_width-1 downto channel*word_width) <= -- read
+      mfile((channel_to_addr_int(channel)+1)*word_width-1 downto channel_to_addr_int(channel)*word_width);
 
     process(clock) is -- write process
-      variable addr_int : integer := to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
     begin
       if rising_edge(clock) and write_enable(channel) = '1' then
-        mfile((addr_int+1)*word_width-1 downto addr_int*word_width) <= write_vals((channel+1)*word_width-1 downto channel*word_width);
+        mfile((channel_to_addr_int(channel)+1)*word_width-1 downto channel_to_addr_int(channel)*word_width) <=
+          write_vals((channel+1)*word_width-1 downto channel*word_width);
       end if;
     end process;
   end generate generate_mem_io;

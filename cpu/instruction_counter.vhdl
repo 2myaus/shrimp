@@ -26,15 +26,15 @@ architecture instruction_counter_a of instruction_counter is
 begin
   instruction_addr <= current_addr;
   instruction_addr_2 <= current_addr_2;
-  process is
-    variable current_addr_int : integer := to_integer(unsigned(current_addr));
-  begin
-    current_addr_2 <= std_logic_vector(to_unsigned(current_addr_int + 2, current_addr_2'length));
-  end process;
+
+  current_addr_2 <= std_logic_vector(to_unsigned(to_integer(unsigned(current_addr))+ 2, current_addr_2'length));
+
   process(clock) is
-    variable current_addr_int : integer := to_integer(unsigned(current_addr));
-    variable offset_int : integer := to_integer(signed(offset));
+    variable current_addr_int : integer;
+    variable offset_int : integer;
   begin
+    current_addr_int := to_integer(unsigned(current_addr));
+    offset_int := to_integer(signed(offset));
     if rising_edge(clock) then
       if increment='1' then
         current_addr <= std_logic_vector(to_unsigned(current_addr_int + 2, current_addr'length));

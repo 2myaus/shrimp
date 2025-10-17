@@ -19,7 +19,7 @@ end entity;
 
 architecture alu_a of alu is
 begin
-  process is
+  process(opcode, operand_a, operand_b, do_signed) is
     variable opa_int : integer;
     variable opb_int : integer;
     variable opb_uint : integer; -- always unsigned

@@ -22,18 +22,20 @@ architecture cpu_tb_a of cpu_tb is
   signal memw1 : std_logic := '0';
   signal memw2 : std_logic := '0';
 
-  signal count : integer := 0;
+  constant instr1 : std_logic_vector(cpu_instruction'range) := (15 downto 12 => CPUOP_LOAD_IMM, 11 downto 4 => "11111111", 3 downto 0 => "0000"); -- load 1s into reg 0
+  constant instr2 : std_logic_vector(cpu_instruction'range) := (15 downto 12 => CPUOP_LOAD_IMM, 11 downto 4 => "00001000", 3 downto 0 => "0001"); -- load mem addr into reg 1
+  constant instr3 : std_logic_vector(cpu_instruction'range) := (15 downto 12 => CPUOP_MEMORY, 11 downto 8 => "0001", 7 downto 4 => "0001", 3 downto 0 => "0000"); -- store 1s into mem address
 
+  constant mem_data_in : std_logic_vector((2**word'length) * halfword'length - 1 downto 0) := (
+    15 downto 0 => instr1,
+    31 downto 16 => instr2,
+    47 downto 32 => instr3,
+    others => '0'
+  );
 begin
   cpu_inst: entity work.cpu
     generic map(
-      -- mem_data(15 downto 0) => (15 downto 12 => CPUOP_LOAD_IMM, 11 downto 4 => "11111111", 3 downto 0 => "0000"), -- load 1s into reg 0
-      -- mem_data(31 downto 16) => (15 downto 12 => CPUOP_LOAD_IMM, 11 downto 4 => "00001000", 3 downto 0 => "0001"), -- load mem address into reg 1
-      -- mem_data(47 downto 32) => (15 downto 12 => CPUOP_MEMORY, 11 downto 8 => "0001", 7 downto 4 => "0001", 3 downto 0 => "0000"), -- store 1s into mem address
-      mem_data(15 downto 0) => "1111111111110000",
-      mem_data(31 downto 16) => "1111000010000001",
-      mem_data(47 downto 32) => "1001000100010000",
-      mem_data((2**word'length)*halfword'length-1 downto 48) => (others => '0'),
+      mem_data => mem_data_in,
       program_start_addr => (others => '0')
     )
     port map(
@@ -47,15 +49,16 @@ begin
       memory_out_val1 => memout1,
       memory_out_val2 => memout2
   );
-  process is
-  begin
+
+  clock_cycle: process is begin
     clock <= not clock;
-    count <= count + 1;
-    report "mem_val=" & integer'image(to_integer(unsigned(memout1)));
-    report "mem_val=" & integer'image(to_integer(unsigned(memout2)));
+    report "clock=" & std_logic'image(clock);
     wait for 100 ns;
-    if count = 10 then
-      wait until false;
-    end if;
+  end process clock_cycle;
+
+  process(memout1, memout2) is
+  begin
+    report "mem_val_1=" & integer'image(to_integer(unsigned(memout1)));
+    report "mem_val_2=" & integer'image(to_integer(unsigned(memout2)));
   end process;
 end architecture;

@@ -4,7 +4,7 @@ TOP = cpu_tb
 
 WORKDIR = work
 
-FLAGS = --workdir=$(WORKDIR)
+FLAGS = --std=08 --workdir=$(WORKDIR)
 
 SOURCE = \
 	alu.vhdl \
@@ -21,4 +21,4 @@ all:
 	$(GHDL) -a $(FLAGS) $(shell $(GHDL) --elab-order $(FLAGS) $(TOP))
 	$(GHDL) -e $(FLAGS) $(TOP)
 	# $(GHDL) -m $(FLAGS) $(TOP)
-	# $(GHDL) -r $(FLAGS) $(TOP)
+	$(GHDL) -r $(FLAGS) $(TOP)

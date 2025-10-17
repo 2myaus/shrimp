@@ -26,8 +26,6 @@ entity instruction_decoder is
 end entity;
 
 architecture instruction_decoder_a of instruction_decoder is
-begin
-  process is
     -- conversions from 16bit word to useful instruction records
     pure function word_to_instr_std(word_in : word) return cpu_instruction_std is
     begin
@@ -57,12 +55,16 @@ begin
         reg_c => word_in(3 downto 0)
       );
     end function;
-
-    variable instruction_in_std : cpu_instruction_std := word_to_instr_std(instruction_in);
-    variable instruction_in_imm : cpu_instruction_imm:= word_to_instr_imm(instruction_in);
-    variable instruction_in_immshort : cpu_instruction_immshort:= word_to_instr_immshort(instruction_in);
-
+begin
+  process(instruction_in) is
+    variable instruction_in_std : cpu_instruction_std;
+    variable instruction_in_imm : cpu_instruction_imm;
+    variable instruction_in_immshort : cpu_instruction_immshort;
   begin
+    instruction_in_std := word_to_instr_std(instruction_in);
+    instruction_in_imm := word_to_instr_imm(instruction_in);
+    instruction_in_immshort := word_to_instr_immshort(instruction_in);
+
     case instruction_in_std.opcode is
       when CPUOP_AND =>
         alu_b_src <= '0';

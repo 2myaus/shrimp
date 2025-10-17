@@ -26,25 +26,9 @@ architecture regfile_a of regfile is
   signal reg_r_b_mod : std_logic_vector(word'length-1 downto 0);
   signal reg_w_mod : std_logic_vector(word'length-1 downto 0);
 begin
-  process is begin
-    if reg_r_a = ZERO_REG then
-      reg_r_a_val <= (others => '0');
-    else
-      reg_r_a_val <= reg_r_a_mod;
-    end if;
-
-    if reg_r_b = ZERO_REG then
-      reg_r_b_val <= (others => '0');
-    else
-      reg_r_b_val <= reg_r_b_mod;
-    end if;
-
-    if reg_w = ZERO_REG then
-      reg_w_val <= (others => '0');
-    else
-      reg_w_val <= reg_w_mod;
-    end if;
-  end process;
+  reg_r_a_val <= (others => '0') when reg_r_a = ZERO_REG else reg_r_a_mod;
+  reg_r_b_val <= (others => '0') when reg_r_b = ZERO_REG else reg_r_b_mod;
+  reg_w_val <= (others => '0') when reg_w = ZERO_REG else reg_w_mod;
 
   m1 : entity work.memfile generic map(
     channels => 3,
