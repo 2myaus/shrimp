@@ -7,7 +7,7 @@ use work.cpu_types.all;
 entity cpu_tb is
 end entity;
 
-architecture tb of cpu_tb is
+architecture cpu_tb_a of cpu_tb is
   signal clock : std_logic := '0';
 
   signal memadd1 : word := "0000000000001000";
@@ -24,9 +24,6 @@ architecture tb of cpu_tb is
 
   signal count : integer := 0;
 
-  constant in1 : std_logic_vector := "1111111111110000";
-  constant in2 : std_logic_vector := "1111000010000001";
-  constant in3 : std_logic_vector := "1001000100010000";
 begin
   cpu_inst: entity work.cpu
     generic map(
@@ -36,7 +33,7 @@ begin
       mem_data(15 downto 0) => "1111111111110000",
       mem_data(31 downto 16) => "1111000010000001",
       mem_data(47 downto 32) => "1001000100010000",
-      mem_data(524288 downto 48) => (others => '0'),
+      mem_data((2**word'length)*halfword'length-1 downto 48) => (others => '0'),
       program_start_addr => (others => '0')
     )
     port map(

@@ -6,7 +6,7 @@ use work.cpu_types.all;
 
 entity cpu is
   generic(
-    mem_data : in std_logic_vector((2**word'length) * halfword'length downto 0) := (others => '0');
+    mem_data : in std_logic_vector((2**word'length) * halfword'length - 1 downto 0) := (others => '0');
     program_start_addr : word := (others => '0')
   );
   port(
@@ -94,7 +94,7 @@ begin
       address_width => word'length,
       word_width => halfword'length,
       data => mem_data
-  )
+    )
     port map(
       in_addrs(word'length-1 downto 0) => mem_address_wire,
       in_addrs(word'length*2-1 downto word'length) => mem_address2_wire,
@@ -108,7 +108,8 @@ begin
       write_vals(halfword'length*6-1 downto halfword'length*5) => memory_in_val2,
       write_enable(0) => memw_wire,
       write_enable(1) => memw2_wire,
-      write_enable(3 downto 2) => (others => '0'),
+      write_enable(2) => '0',
+      write_enable(3) => '0',
       write_enable(4) => memory_write1,
       write_enable(5) => memory_write2,
       clock => clock_wire,
@@ -126,7 +127,7 @@ begin
       reg_r_b => reg2_wire,
       reg_w => rego_wire,
       write_val => reg_in_wire,
-      write_enable => regw_wire,
+      reg_write_enable => regw_wire,
       clock => clock_wire,
       reg_r_a_val => reg_val1_wire,
       reg_r_b_val => reg_val2_wire,

@@ -11,7 +11,7 @@ entity regfile is
     reg_r_b : in reg_addr;
     reg_w : in reg_addr; -- Register to write to
     write_val : in word; -- Value that gets written to reg_w
-    write_enable : in std_logic; -- Whether to write on clock signal
+    reg_write_enable : in std_logic; -- Whether to write on clock signal
     clock : in std_logic;
 
     reg_r_a_val : out word; -- Value in reg_r_a
@@ -48,16 +48,18 @@ begin
 
   m1 : entity work.memfile generic map(
     channels => 3,
-    address_width => 4,
-    word_width => 16,
-    data => "0"
+    address_width => reg_addr'length,
+    word_width => word'length,
+    data => ((2**reg_addr'length)*word'length-1 downto 0 => '0')
   ) port map(
-    in_addrs(3 downto 0) => reg_r_a,
-    in_addrs(7 downto 4) => reg_r_b,
-    in_addrs(11 downto 8) => reg_w,
+    in_addrs(reg_addr'length-1 downto 0) => reg_r_a,
+    in_addrs(reg_addr'length*2-1 downto reg_addr'length) => reg_r_b,
+    in_addrs(reg_addr'length*3-1 downto reg_addr'length*2) => reg_w,
     write_vals(word'length*3-1 downto word'length*2) => write_val,
     write_vals(word'length*2-1 downto 0) => (others => '0'),
-    write_enable(2) => write_enable,
+    write_enable(0) => '0',
+    write_enable(1) => '1',
+    write_enable(2) => reg_write_enable,
     clock => clock,
     read_vals(word'length-1 downto 0) => reg_r_a_mod,
     read_vals(word'length*2-1 downto word'length) => reg_r_b_mod,
