@@ -4,7 +4,7 @@ TOP = cpu_tb
 
 WORKDIR = work
 
-FLAGS = --std=08 --workdir=$(WORKDIR)
+FLAGS = --workdir=$(WORKDIR)
 
 SOURCE = \
 	alu.vhdl \

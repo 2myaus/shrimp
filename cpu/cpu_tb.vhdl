@@ -51,8 +51,8 @@ begin
   begin
     clock <= not clock;
     count <= count + 1;
-    report "mem_val=" & integer'image(to_integer(unsigned(memin1)));
-    report "mem_val=" & integer'image(to_integer(unsigned(memin2)));
+    report "mem_val=" & integer'image(to_integer(unsigned(memout1)));
+    report "mem_val=" & integer'image(to_integer(unsigned(memout2)));
     wait for 100 ns;
     if count = 10 then
       wait until false;

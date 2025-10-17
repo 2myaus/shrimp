@@ -13,7 +13,7 @@ entity memfile is
     channels : integer := 1; -- number of access channels for r/w
     address_width : integer := word'length; -- bit width of addresses (determines address space)
     word_width : integer := halfword'length; -- size of each value in bits
-    data : std_logic_vector := ((2**address_width)*word_width-1 downto 0 => '0')
+    data : std_logic_vector := ((2**word'length)*halfword'length-1 downto 0 => '0')
   );
   port(
     in_addrs : in std_logic_vector(channels*address_width-1 downto 0); -- addresses
@@ -28,18 +28,18 @@ end entity;
 architecture memfile_a of memfile is
     signal mfile : std_logic_vector((2**address_width)*word_width-1 downto 0) := data;
 begin
-  generate_mem_io: for channel in 0 to channels generate
+  generate_mem_io: for channel in 0 to channels-1 generate
     process is -- read process
       variable addr_int : integer := to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
     begin
-      read_vals((channel+1)*address_width-1 downto channel*address_width) <= mfile((addr_int+1)*word_width-1 downto addr_int*word_width);
+      read_vals((channel+1)*word_width-1 downto channel*word_width) <= mfile((addr_int+1)*word_width-1 downto addr_int*word_width);
     end process;
 
     process(clock) is -- write process
       variable addr_int : integer := to_integer(unsigned(in_addrs((channel+1)*address_width-1 downto channel*address_width)));
     begin
       if rising_edge(clock) and write_enable(channel) = '1' then
-        mfile((addr_int+1)*word_width-1 downto addr_int*word_width) <= write_vals((channel+1)*address_width-1 downto channel*address_width);
+        mfile((addr_int+1)*word_width-1 downto addr_int*word_width) <= write_vals((channel+1)*word_width-1 downto channel*word_width);
       end if;
     end process;
   end generate generate_mem_io;
