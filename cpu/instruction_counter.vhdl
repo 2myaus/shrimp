@@ -22,12 +22,12 @@ end entity;
 
 architecture instruction_counter_a of instruction_counter is
     signal current_addr : word := start_addr;
-    signal current_addr_2 : word;
+    signal current_addr_2 : word := "0000000000000000";
 begin
   instruction_addr <= current_addr;
   instruction_addr_2 <= current_addr_2;
 
-  current_addr_2 <= std_logic_vector(to_unsigned(to_integer(unsigned(current_addr))+ 2, current_addr_2'length));
+  current_addr_2 <= std_logic_vector(to_unsigned(to_integer(unsigned(current_addr))+ 1, current_addr_2'length));
 
   process(clock) is
     variable current_addr_int : integer;

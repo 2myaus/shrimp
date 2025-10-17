@@ -10,6 +10,7 @@
     devShells.x86_64-linux.default = pkgs.mkShell {
       buildInputs = [
         pkgs.ghdl # VHDL compiler studd
+        pkgs.gtkwave # Waveform viewer
         pkgs.vhdl-ls # VHDL langserver
 
         pkgs.gcc

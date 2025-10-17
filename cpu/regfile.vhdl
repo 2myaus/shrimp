@@ -22,9 +22,9 @@ end entity;
 
 
 architecture regfile_a of regfile is
-  signal reg_r_a_mod : std_logic_vector(word'length-1 downto 0);
-  signal reg_r_b_mod : std_logic_vector(word'length-1 downto 0);
-  signal reg_w_mod : std_logic_vector(word'length-1 downto 0);
+  signal reg_r_a_mod : word := "0000000000000000";
+  signal reg_r_b_mod : word := "0000000000000000";
+  signal reg_w_mod : word := "0000000000000000";
 begin
   reg_r_a_val <= (others => '0') when reg_r_a = ZERO_REG else reg_r_a_mod;
   reg_r_b_val <= (others => '0') when reg_r_b = ZERO_REG else reg_r_b_mod;

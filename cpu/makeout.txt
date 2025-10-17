@@ -1,0 +1,1878 @@
+ghdl -i --std=08 --workdir=work alu.vhdl cpu_tb.vhdl cpu_types.vhdl cpu.vhdl instruction_counter.vhdl instruction_decoder.vhdl memfile.vhdl regfile.vhdl 
+ghdl -a --std=08 --workdir=work cpu_types.vhdl instruction_decoder.vhdl instruction_counter.vhdl memfile.vhdl regfile.vhdl alu.vhdl cpu.vhdl cpu_tb.vhdl
+ghdl -e --std=08 --workdir=work cpu_tb
+# ghdl -m --std=08 --workdir=work cpu_tb
+ghdl -r --std=08 --workdir=work cpu_tb
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@0ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:62:5:@0ms:(report note): mem_val_1=0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:63:5:@0ms:(report note): mem_val_2=0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:62:5:@0ms:(report note): mem_val_1=0
+cpu_tb.vhdl:63:5:@0ms:(report note): mem_val_2=0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@0ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@10000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@20000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@20000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@20000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@20000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@20000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@30000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@40000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@40000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@40000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@50000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@60000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@60000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@60000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@70000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@80000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@80000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@80000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@90000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@1980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@1980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@1990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@2980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@2980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@2990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@3980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@3980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@3990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@4980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@4980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@4990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@5980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@5980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@5990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@6980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@6980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@6990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@7980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@7980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@7990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8230000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8240000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8240000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8250000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8260000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8260000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8270000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8280000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8280000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8290000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8300000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8300000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8310000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8320000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8320000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8330000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8340000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8340000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8350000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8360000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8360000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8370000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8380000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8380000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8390000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8400000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8400000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8410000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8420000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8420000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8430000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8440000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8440000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8450000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8460000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8460000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8470000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8480000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8480000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8490000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8500000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8500000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8510000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8520000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8520000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8530000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8540000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8540000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8550000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8560000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8560000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8570000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8580000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8580000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8590000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8600000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8600000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8610000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8620000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8620000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8630000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8640000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8640000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8650000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8660000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8660000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8670000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8680000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8680000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8690000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8700000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8700000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8710000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8720000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8720000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8730000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8740000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8740000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8750000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8760000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8760000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8770000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8780000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8780000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8790000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8800000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8800000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8810000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8820000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8820000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8830000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8840000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8840000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8850000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8860000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8860000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8870000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8880000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8880000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8890000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8900000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8900000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8910000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8920000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8920000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8930000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8940000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8940000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8950000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8960000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8960000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8970000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@8980000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@8980000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@8990000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9000000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9000000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9010000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9020000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9020000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9030000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9040000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9040000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9050000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9060000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9060000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9070000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9080000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9080000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9090000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9100000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9100000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9110000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9120000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9120000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9130000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9140000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9140000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9150000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9160000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9160000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9170000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9180000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9180000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9190000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9200000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9200000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+cpu_tb.vhdl:56:5:@9210000ms:(report note): clock='1'
+cpu_tb.vhdl:56:5:@9220000ms:(report note): clock='0'
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@9220000ms:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

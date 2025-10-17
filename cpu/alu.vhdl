@@ -20,11 +20,11 @@ end entity;
 architecture alu_a of alu is
 begin
   process(opcode, operand_a, operand_b, do_signed) is
-    variable opa_int : integer;
-    variable opb_int : integer;
-    variable opb_uint : integer; -- always unsigned
-    variable opa_msb : std_logic;
-    variable opb_msb : std_logic;
+    variable opa_int : integer := 0;
+    variable opb_int : integer := 0;
+    variable opb_uint : integer := 0; -- always unsigned
+    variable opa_msb : std_logic := '0';
+    variable opb_msb : std_logic := '0';
   begin
     opb_uint := to_integer(unsigned(operand_b));
     if do_signed='1' then

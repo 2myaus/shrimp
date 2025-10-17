@@ -57,9 +57,9 @@ architecture instruction_decoder_a of instruction_decoder is
     end function;
 begin
   process(instruction_in) is
-    variable instruction_in_std : cpu_instruction_std;
-    variable instruction_in_imm : cpu_instruction_imm;
-    variable instruction_in_immshort : cpu_instruction_immshort;
+    variable instruction_in_std : cpu_instruction_std := word_to_instr_std((others => '0'));
+    variable instruction_in_imm : cpu_instruction_imm := word_to_instr_imm((others => '0'));
+    variable instruction_in_immshort : cpu_instruction_immshort := word_to_instr_immshort((others => '0'));
   begin
     instruction_in_std := word_to_instr_std(instruction_in);
     instruction_in_imm := word_to_instr_imm(instruction_in);

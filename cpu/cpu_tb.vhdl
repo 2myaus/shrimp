@@ -16,8 +16,8 @@ architecture cpu_tb_a of cpu_tb is
   signal memin1 : halfword := "00000000";
   signal memin2 : halfword := "00000000";
   
-  signal memout1 : halfword;
-  signal memout2 : halfword;
+  signal memout1 : halfword := "00000000";
+  signal memout2 : halfword := "00000000";
 
   signal memw1 : std_logic := '0';
   signal memw2 : std_logic := '0';
@@ -49,11 +49,12 @@ begin
       memory_out_val1 => memout1,
       memory_out_val2 => memout2
   );
-
+  
+  
   clock_cycle: process is begin
+    wait for 100 ns;
     clock <= not clock;
     report "clock=" & std_logic'image(clock);
-    wait for 100 ns;
   end process clock_cycle;
 
   process(memout1, memout2) is
