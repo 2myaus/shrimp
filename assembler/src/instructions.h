@@ -76,6 +76,12 @@ enum register_address : uint8_t{
   REG_00 = 0xF  //! hardwired zero
 };
 
+enum instruction_type{
+  IT_IMM,
+  IT_STD,
+  IT_IMMS
+};
+
 struct asm_instruction{
   asm_opcode opcode : 4;
   union{
