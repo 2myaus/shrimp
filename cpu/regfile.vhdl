@@ -6,6 +6,9 @@ use work.cpu_types.all;
 
 --! internal CPU registers, there are 16. addressed with 4 bits
 entity regfile is
+  generic(
+    debug_logs : boolean := false
+  );
   port(
     reg_r_a : in reg_addr;
     reg_r_b : in reg_addr;
@@ -31,6 +34,7 @@ begin
   reg_w_val <= (others => '0') when reg_w = ZERO_REG else reg_w_mod;
 
   m1 : entity work.memfile generic map(
+    debug_logs => debug_logs,
     channels => 3,
     address_width => reg_addr'length,
     word_width => word'length,
@@ -42,7 +46,7 @@ begin
     write_vals(word'length*3-1 downto word'length*2) => write_val,
     write_vals(word'length*2-1 downto 0) => (others => '0'),
     write_enable(0) => '0',
-    write_enable(1) => '1',
+    write_enable(1) => '0',
     write_enable(2) => reg_write_enable,
     clock => clock,
     read_vals(word'length-1 downto 0) => reg_r_a_mod,

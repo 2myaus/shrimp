@@ -5,6 +5,7 @@ TOP = cpu_tb
 WORKDIR = work
 
 FLAGS = --std=08 --workdir=$(WORKDIR)
+RUNFLAGS = --stop-time=1000ns --wave=$(WORKDIR)/shrimpwave.ghw --ieee-asserts=disable -gdebug_logs=true
 
 SOURCE = \
 	alu.vhdl \
@@ -21,4 +22,4 @@ all:
 	# $(GHDL) -a $(FLAGS) $(shell $(GHDL) --elab-order $(FLAGS) $(TOP))
 	# $(GHDL) -e $(FLAGS) $(TOP)
 	$(GHDL) -m $(FLAGS) $(TOP)
-	$(GHDL) -r $(FLAGS) $(TOP) --stop-time=1000ns --wave=$(WORKDIR)/shrimpwave.ghw
+	$(GHDL) -r $(FLAGS) $(TOP) $(RUNFLAGS)
