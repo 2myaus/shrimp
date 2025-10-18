@@ -8,6 +8,7 @@ use work.cpu_types.all;
 --! Increments stored address by 2 for each clock pulse, or by offset if jump=1 during the clock pulse
 entity instruction_counter is
   generic(
+    debug_logs : boolean := false;
     start_addr : word := (others => '0')
   );
   port(
@@ -39,6 +40,11 @@ begin
       if increment='1' then
         current_addr <= std_logic_vector(to_unsigned(current_addr_int + 2, current_addr'length));
       else
+        if debug_logs then
+          report "jumping instruction counter; old address " & integer'image(current_addr_int) &
+          ", offset " & integer'image(offset_int) & " (" & to_hstring(offset) & ")" &
+          ", new address " & integer'image(current_addr_int + offset_int);
+        end if;
         current_addr <= std_logic_vector(to_unsigned(current_addr_int + offset_int, current_addr'length));
       end if;
     end if;

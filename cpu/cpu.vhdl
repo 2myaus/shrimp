@@ -76,8 +76,10 @@ begin
       memfile_byte => membyte_wire
   );
 
+  instruction_offset_wire <= reg_val3_wire;
   instruction_counter_inst : entity work.instruction_counter
     generic map(
+      debug_logs => debug_logs,
       start_addr => program_start_addr
     )
     port map(
@@ -95,7 +97,7 @@ begin
   memw2_wire <= memw_wire and (not membyte_wire);
   memfile_inst: entity work.memfile
     generic map(
-      debug_logs => debug_logs,
+      -- debug_logs => debug_logs,
       channels => 6,
       address_width => word'length,
       word_width => halfword'length,
@@ -129,7 +131,7 @@ begin
   reg_in_wire <= alures_wire when regfile_src_wire='1' else memval_wire;
   regfile_inst: entity work.regfile
     generic map(
-      debug_logs => false --debug_logs
+      debug_logs => debug_logs
     )
     port map(
       reg_r_a => reg1_wire,
