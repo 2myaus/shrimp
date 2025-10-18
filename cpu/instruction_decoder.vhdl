@@ -7,6 +7,9 @@ use work.cpu_types.all;
 --! instruction decoder
 --! configures connnections and provides values to CPU components based on the instruction input
 entity instruction_decoder is
+  generic(
+    debug_logs : boolean := false
+  );
   port(
     instruction_in : in cpu_instruction; -- instruction input
 
@@ -64,6 +67,8 @@ begin
     instruction_in_std := word_to_instr_std(instruction_in);
     instruction_in_imm := word_to_instr_imm(instruction_in);
     instruction_in_immshort := word_to_instr_immshort(instruction_in);
+
+    report "decoding instruction: " & to_bstring(instruction_in);
 
     case instruction_in_std.opcode is
       when CPUOP_AND =>

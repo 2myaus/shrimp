@@ -57,7 +57,10 @@ begin
   clock_wire <= clock;
 
   instruction_decoder_inst : entity work.instruction_decoder
-   port map(
+    generic map(
+      debug_logs => debug_logs
+    )
+    port map(
       instruction_in => instruction_wire,
       alu_b_src => alusrc_b_wire,
       regfile_src => regfile_src_wire,

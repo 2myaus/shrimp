@@ -2,6 +2,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use std.textio.all;
+
 use work.cpu_types.all;
 
 entity cpu_tb is
@@ -25,16 +27,27 @@ architecture cpu_tb_a of cpu_tb is
   signal memw1 : std_logic := '0';
   signal memw2 : std_logic := '0';
 
-  constant instr1 : std_logic_vector(cpu_instruction'range) := (15 downto 12 => CPUOP_LOAD_IMM, 11 downto 4 => "11111111", 3 downto 0 => "0000"); -- load 1s into reg 0
-  constant instr2 : std_logic_vector(cpu_instruction'range) := (15 downto 12 => CPUOP_LOAD_IMM, 11 downto 4 => "10000000", 3 downto 0 => "0001"); -- load mem addr into reg 1
-  constant instr3 : std_logic_vector(cpu_instruction'range) := (15 downto 12 => CPUOP_MEMORY, 11 downto 8 => "0001", 7 downto 4 => "0001", 3 downto 0 => "0000"); -- store 1s into mem address
+  constant mem_size : integer := (2**word'length) * halfword'length;
+  
+  -- Read a binary file (based on https://electronics.stackexchange.com/a/180575)
+  impure function ReadMemFile(FileName : STRING) return std_logic_vector is
+    file FileHandle       : TEXT open READ_MODE is FileName;
+    variable CurrentBitVec : std_logic_vector(cpu_instruction'range);
+    variable CurrentLine : line;
+    variable Result       : std_logic_vector(mem_size-1 downto 0) := (others => '0');
+  begin
+    for i in 0 to mem_size / cpu_instruction'length loop
+      exit when endfile(FileHandle);
+      readline(FileHandle, CurrentLine);
+      read(CurrentLine, CurrentBitVec);
+      Result((i+1) * cpu_instruction'length-1 downto i*cpu_instruction'length) := CurrentBitVec;
+    end loop;
 
-  constant mem_data_in : std_logic_vector((2**word'length) * halfword'length - 1 downto 0) := (
-    15 downto 0 => instr1,
-    31 downto 16 => instr2,
-    47 downto 32 => instr3,
-    others => '0'
-  );
+    return Result;
+  end function;
+
+  constant mem_data_in : std_logic_vector(mem_size - 1 downto 0) := ReadMemFile("test.shrasm");
+
 begin
   cpu_inst: entity work.cpu
     generic map(

@@ -12,6 +12,8 @@
         pkgs.ghdl # VHDL compiler studd
         pkgs.gtkwave # Waveform viewer
         pkgs.vhdl-ls # VHDL langserver
+        pkgs.xxd # hex reader
+        pkgs.hexedit # hex editor
 
         pkgs.gcc
         pkgs.clang-tools
