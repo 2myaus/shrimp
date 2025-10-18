@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 use std.textio.all;
 
 use work.cpu_types.all;
+use work.testvec_data.all;
 
 entity cpu_tb is
   generic(
@@ -29,24 +30,10 @@ architecture cpu_tb_a of cpu_tb is
 
   constant mem_size : integer := (2**word'length) * halfword'length;
   
-  -- Read a binary file (based on https://electronics.stackexchange.com/a/180575)
-  impure function ReadMemFile(FileName : STRING) return std_logic_vector is
-    file FileHandle       : TEXT open READ_MODE is FileName;
-    variable CurrentBitVec : std_logic_vector(cpu_instruction'range);
-    variable CurrentLine : line;
-    variable Result       : std_logic_vector(mem_size-1 downto 0) := (others => '0');
-  begin
-    for i in 0 to mem_size / cpu_instruction'length loop
-      exit when endfile(FileHandle);
-      readline(FileHandle, CurrentLine);
-      read(CurrentLine, CurrentBitVec);
-      Result((i+1) * cpu_instruction'length-1 downto i*cpu_instruction'length) := CurrentBitVec;
-    end loop;
-
-    return Result;
-  end function;
-
-  constant mem_data_in : std_logic_vector(mem_size - 1 downto 0) := ReadMemFile("test.shrasm");
+  constant mem_data_in : std_logic_vector(mem_size - 1 downto 0) := (
+    testvec'range => testvec,
+    others => '0'
+  );
 
 begin
   cpu_inst: entity work.cpu

@@ -14,6 +14,7 @@
         pkgs.vhdl-ls # VHDL langserver
         pkgs.xxd # hex reader
         pkgs.hexedit # hex editor
+        pkgs.python3
 
         pkgs.gcc
         pkgs.clang-tools

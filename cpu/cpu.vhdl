@@ -155,4 +155,10 @@ begin
       -- overflow => overflow,
       -- carry => carry
   );
+
+  process(clock) is begin
+    if rising_edge(clock) and debug_logs then
+      report "running instruction " & to_hstring(instruction_wire) & " AKA " & to_bstring(instruction_wire);
+    end if;
+  end process;
 end architecture;

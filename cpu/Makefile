@@ -1,4 +1,8 @@
+PY = python3
 GHDL = ghdl
+
+TESTVEC_IN = shrimptest.bin
+TESTVEC_OUT = testvec.vhdl
 
 TOP = cpu_tb
 
@@ -16,8 +20,10 @@ SOURCE = \
 	instruction_decoder.vhdl \
 	memfile.vhdl \
 	regfile.vhdl \
+	$(TESTVEC_OUT) \
 
 all:
+	$(PY) bin_to_vhdl.py $(TESTVEC_IN) $(TESTVEC_OUT)
 	$(GHDL) -i $(FLAGS) $(SOURCE)
 	# $(GHDL) -a $(FLAGS) $(shell $(GHDL) --elab-order $(FLAGS) $(TOP))
 	# $(GHDL) -e $(FLAGS) $(TOP)
