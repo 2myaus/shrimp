@@ -85,6 +85,7 @@ begin
       instruction_addr_2 => instruction_address_2_wire
     );
 
+  mem_address_wire <= reg_val1_wire;
   mem_address2_wire <= std_logic_vector(to_unsigned(to_integer(unsigned(mem_address_wire)) + 1, word'length));
   memval_wire(halfword'length-1 downto 0) <= memval_byte2_wire and (memval_byte2_wire'length-1 downto 0 => (not membyte_wire));
 
@@ -125,7 +126,7 @@ begin
   reg_in_wire <= alures_wire when regfile_src_wire='1' else memval_wire;
   regfile_inst: entity work.regfile
     generic map(
-      debug_logs => false --debug_logs
+      debug_logs => debug_logs
     )
     port map(
       reg_r_a => reg1_wire,
