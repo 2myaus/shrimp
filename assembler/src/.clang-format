@@ -1,0 +1,31 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+UseTab: Never
+ColumnLimit: 140               # Max line width
+BreakBeforeBraces: Allman      # Braces on their own line
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: true
+SpaceBeforeParens: ControlStatements # Space after if/for/while
+SpacesInParentheses: false    # No spaces just inside parentheses
+SpacesInAngles: false
+SpaceBeforeAssignmentOperators: true
+# SpaceAroundOperators: true    # Spaces around +, -, *, /, etc.
+SpaceAfterCStyleCast: true
+SpaceBeforeCtorInitializerColon: true
+# SpaceAfterCtorInitializerColon: true
+PointerAlignment: Right       # "int *ptr;" not "int* ptr;"
+BinPackArguments: false       # Don’t cram args onto one line
+BinPackParameters: false
+PenaltyBreakBeforeFirstCallParameter: 1000
+PenaltyBreakComment: 100
+PenaltyReturnTypeOnItsOwnLine: 200
+IndentCaseLabels: true
+
+# Comment formatting options
+ReflowComments: true
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 1
+
+# Keep doxygen/javadoc-style markers as-is (/*! ... */)
+CommentPragmas: '^!'

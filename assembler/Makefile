@@ -9,6 +9,9 @@ SOURCE_DIR = src
 # List of all the source files.
 SOURCE = \
 	main.cpp \
+	instructions.cpp \
+	writer.cpp \
+	reader.cpp
 
 INCLUDES = \
 	src \
@@ -16,7 +19,7 @@ INCLUDES = \
 CXX = g++
 
 CXX_FLAGS = \
-	-g -Wall -Wextra -Wfloat-equal -Wswitch-default -Wswitch-enum \
+	-g -O0 -Wall -Wextra -Wfloat-equal -Wswitch-default -Wswitch-enum \
 	
 LNK_FLAGS = \
 

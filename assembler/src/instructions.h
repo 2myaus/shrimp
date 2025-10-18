@@ -1,3 +1,5 @@
+#pragma once
+
 #include <cstdint>
 
 //! instruction opcodes
@@ -86,20 +88,23 @@ struct asm_instruction{
   asm_opcode opcode : 4;
   union{
     struct{
-      register_address reg_operand_a : 4;
-      register_address reg_operand_b : 4;
-      register_address reg_operand_c : 4;
+      register_address reg_a : 4;
+      register_address reg_b : 4;
+      register_address reg_c : 4;
     } standard;
 
     struct{
-      register_address reg_operand_a : 4;
+      register_address reg_a : 4;
       uint8_t data : 4;
-      register_address reg_operand_c : 4;
+      register_address reg_c : 4;
     } short_immediate;
 
     struct{
       uint8_t data : 8;
-      register_address reg_operand_c : 4;
+      register_address reg_c : 4;
     } immediate;
   };
 };
+
+uint16_t instruction_to_bin(const asm_instruction instr_in);
+instruction_type opcode_to_type(const asm_opcode opcode_in);

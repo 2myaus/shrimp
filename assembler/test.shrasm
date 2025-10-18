@@ -1,0 +1,4 @@
+ldim 0xFF a0
+subi a0 0x1 a0
+ldim 0x80 a1
+mem a1 1 a0
