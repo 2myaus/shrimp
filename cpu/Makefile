@@ -9,7 +9,7 @@ TOP = cpu_tb
 WORKDIR = work
 
 FLAGS = --std=08 --workdir=$(WORKDIR)
-RUNFLAGS = --stop-time=1000ns --wave=$(WORKDIR)/shrimpwave.ghw --ieee-asserts=disable -gdebug_logs=true
+RUNFLAGS = --stop-time=2000ns --wave=$(WORKDIR)/shrimpwave.ghw --ieee-asserts=disable -gdebug_logs=true
 
 SOURCE = \
 	alu.vhdl \

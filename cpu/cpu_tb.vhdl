@@ -9,15 +9,17 @@ use work.testvec_data.all;
 
 entity cpu_tb is
   generic(
-    debug_logs : boolean := false
+    debug_logs : boolean := false;
+    watch_mem_1 : word := (0 => '0', others => '1');
+    watch_mem_2 : word := (others => '1')
   );
 end entity;
 
 architecture cpu_tb_a of cpu_tb is
   signal clock : std_logic := '0';
 
-  signal memadd1 : word := "0000000010000000";
-  signal memadd2 : word := "0000000010000001";
+  signal memadd1 : word := watch_mem_1;
+  signal memadd2 : word := watch_mem_2;
 
   signal memin1 : halfword := "00000000";
   signal memin2 : halfword := "00000000";
@@ -58,7 +60,6 @@ begin
   clock_cycle: process is begin
     wait for 100 ns;
     clock <= not clock;
-    report "clock=" & std_logic'image(clock);
   end process clock_cycle;
 
   process(memout2) is

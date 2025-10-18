@@ -1,4 +1,6 @@
-ldim 0xFF a0
-subi a0 0x1 a0
-ldim 0x80 a1
-mem a1 1 a0
+limm 0xFF a1 # load 0x00FF into a1
+slup a1 a0 # leftshift a0 to 0xFF00 using a1
+add a1 a0 a0 # add a1 to a0 so a0=0xFFFF
+cp a0 a1 # set a1 to 0xFFFF
+subi a0 0x1 a0 # subtract 1 from a0
+wmemw a0 a1 # write value a1 to address a0

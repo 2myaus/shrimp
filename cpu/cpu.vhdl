@@ -129,7 +129,7 @@ begin
   reg_in_wire <= alures_wire when regfile_src_wire='1' else memval_wire;
   regfile_inst: entity work.regfile
     generic map(
-      debug_logs => debug_logs
+      debug_logs => false --debug_logs
     )
     port map(
       reg_r_a => reg1_wire,
@@ -157,7 +157,7 @@ begin
   );
 
   process(clock) is begin
-    if rising_edge(clock) and debug_logs then
+    if rising_edge(clock) then
       report "running instruction " & to_hstring(instruction_wire) & " AKA " & to_bstring(instruction_wire);
     end if;
   end process;
