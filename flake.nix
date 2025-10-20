@@ -22,6 +22,8 @@
         pkgs.gnumake
         pkgs.bear
         pkgs.gdb
+
+        pkgs.doxygen
       ];
     };
   };
